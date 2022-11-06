@@ -23,4 +23,15 @@ puts "Creating reviews..."
 # *****************************************************************
 # Create Reviews Here
 
+
+review1 = Review.create(star_rating: 5, comment: "Excellent Stapler", product_id: product1.id , user_id:user1.id)
+review2 = Review.create(star_rating: 5, comment: "A nice Working Whiteboard", product_id: product2.id , user_id:user2.id)
+review3 = Review.create(star_rating: 3, comment: "The maker is not coloring", product_id: product3.id , user_id:user2.id)
+review4 = Review.create(star_rating: 3.8, comment: "Great Ballpoint Pens", product_id: product4.id , user_id:user1.id)
+review5 = Review.create(star_rating: 5, comment: "Nice Tapes", product_id: product5.id , user_id:user1.id)
+
+review6 = Review.create(star_rating: 1, comment: "Worst Stapler Ever", product_id: product1.id , user_id:user2.id)
+
+
+
 puts "Seeding done!"
